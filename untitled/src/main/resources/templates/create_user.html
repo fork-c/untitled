@@ -1,0 +1,40 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Current Users</title>
+</head>
+<body>
+<h3>Create or edit a user</h3>
+<form method="get" action="/users">
+    <div>
+        <label for="email">email: </label>
+        <input type="text" id="email"
+               name="email" size="20">
+    </div>
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" size="10">
+    </div>
+    <div>
+        <label for="surname">Surname: </label>
+        <input type="text" id="surname"
+               name="surname" size="20">
+    </div>
+    <div>
+        <label for="salary">Salary: </label>
+        <input type="text" id="salary" name="salary" size="10">
+    </div>
+    <div>
+        <label for="phone">phone: </label>
+        <input type="text" id="phone" name="phone" size="10">
+    </div>
+    <div>
+        <label for="cname">country: </label>
+        <input type="text" id="cname" name="cname" size="10">
+    </div>
+    <input type="hidden" name="type" value="create">
+    <input type="submit">
+</form>
+</body>
+</html>
